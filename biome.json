@@ -1,0 +1,55 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+    "linter": {
+      "enabled": true,
+      "rules": {
+        "recommended": true,
+        "a11y": {
+          "noSvgWithoutTitle": "off",
+          "useButtonType": "off"
+        },
+        "correctness": {
+          "noUnusedVariables": "error",
+          "useExhaustiveDependencies": "warn",
+          "noUnusedImports": "error"
+        },
+        "security": {
+          "noDangerouslySetInnerHtml": "off"
+        },
+        "style": {
+          "useBlockStatements": "error",
+          "noNonNullAssertion": "off"
+        },
+        "performance": {
+          "noDelete": "off"
+        },
+        "suspicious": {
+          "noExplicitAny": "off",
+          "noArrayIndexKey": "off"
+        }
+      }
+    },
+    "formatter": {
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "enabled": true,
+      "lineWidth": 100,
+      "attributePosition": "multiline"
+    },
+    "organizeImports": {
+      "enabled": false
+    },
+    "files": {
+      "ignore": [
+        "node_modules",
+        "dist",
+        ".next",
+        "build",
+        ".contentlayer",
+        ".wrangler",
+        "**/drizzle/**",
+        "./apps/web/utils/topojson.ts"
+      ],
+      "ignoreUnknown": true
+    }
+  }
