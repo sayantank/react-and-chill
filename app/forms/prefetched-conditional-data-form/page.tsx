@@ -12,7 +12,7 @@ export default async function ConditionalDataForm() {
         a faster UX within the form, but the form may take longer to load.
       </TypographyP>
       <TypographyP>
-        This also means that the list of endpoints will be static, and won't update if the database
+        This also means that the list of endpoints will be static, and wont update if the database
         is updated while working on the form. This is possible when multiple users are working in
         the same organization, at the same time.
       </TypographyP>
