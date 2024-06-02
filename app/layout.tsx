@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import UglyLink from "@/components/shared/ugly-link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
-        <Toaster />
+        <main className="min-h-screen mx-auto py-10 max-w-3xl">
+          {children}
+          <div className="mt-8 pt-8 border-t border-muted">
+            <div className="flex items-center space-x-2">
+              <UglyLink href="https://github.com/sayantank/react-and-chill">github</UglyLink>
+            </div>
+          </div>
+          <Toaster />
+        </main>
       </body>
     </html>
   );
